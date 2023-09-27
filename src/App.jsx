@@ -1,53 +1,45 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <body>
+      <div className="container">
+        <div className="top"></div>
+        <div className="bottom-Content">
+          <img src="/image-victor.jpg" alt="victor" className="imgVictor" />
+          <div className="content">
+            <div>
+              <h2>Victor Crest</h2>
+              <span>26</span>
+            </div>
+            <div>
+              <span>London</span>
+            </div>
+          </div>
+          <div className="bottom">
+            <div className="bottom-Txt">
+              <h3>80k</h3>
+              <span>Followers</span>
+            </div>
+            <div className="bottom-Txt">
+              <h3>803k</h3>
+              <span>Likes</span>
+            </div>
+            <div className="bottom-Txt">
+              <h3>1.4k</h3>
+              <span>Photos</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
       <div class="attribution">
         Challenge by{" "}
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor
         </a>
-        . Coded by <a href="#">Your Name Here</a>.
+        . Coded by <a href="#">Erick-384</a>.
       </div>
-      {/* Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos */}
-    </>
+    </body>
   );
 }
 
